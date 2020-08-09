@@ -1,4 +1,4 @@
-package java.main.com.flamingo09.threads;
+package main.java.com.flamingo09.threads;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -30,6 +30,8 @@ public class MultipleFutureCallables {
 
     public void runThreadsWithCallable() throws InterruptedException, ExecutionException, TimeoutException {
         ExecutorService executorService = Executors.newFixedThreadPool(10);
+
+        System.out.println("I was called");
 
         try {
             List<MyObject> myObjectList = new ArrayList<>();
